@@ -1,0 +1,9 @@
+FROM nextcloud
+
+# Optionally copy a pre-customized config.php file
+COPY config/config.php /var/www/html/config/config.php
+
+# Optional: startup script to run occ commands or other setup
+# COPY init.sh /init.sh
+# RUN chmod +x /init.sh
+# ENTRYPOINT ["/init.sh"]
